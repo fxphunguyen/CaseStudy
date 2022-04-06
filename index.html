@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web-Cafe</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav> 
+            <div class="content-nav">
+                <ul>
+                    <li><a href="#">Trang Chủ</a></li>
+                    <li><a href="#">Sản Phẩm</a></li>
+                    <li><a href="#">Liên Hệ</a></li>
+                    <li><a href="#">Giới Thiệu</a></li>
+                </ul>
+                <form>
+                    <input type="text" name="search" placeholder="Tìm kiếm sản phẩm..." />
+                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+            <!-- The Modal -->
+            <button id="cart">
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                Giỏ Hàng
+            </button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        </div>
+                        <div class="cart-items">
+
+                        </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0 <sup>đ</sup></span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- content -->
+    <section class="wrapper">
+        <div class="products">
+            <ul>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://kphucsinh.vn/Images/2.2022/2022-SP-RANG-XAY-BSL-454-RX.png"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">CÀ PHÊ BLUE SƠN LA 454 G</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">358000 <sup>đ</sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://kphucsinh.vn/Images/2.2022/2022-SP-RANG-XAY-KB-454-RX.png"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">CÀ PHÊ K BLACK 454 G</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">191000 <sup>đ</sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://kphucsinh.vn/Images/2.2022/2022-SP-RANG-XAY-KH-227-RX.png"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">CÀ PHÊ K HAPPY 227G</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">88000 <sup>đ</sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://kphucsinh.vn/Images/2.2022/2022-SP-RANG-XAY-KM-227-RX.png"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">CÀ PHÊ K MORNING 227G - NEW</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">82000 <sup>đ</sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://kphucsinh.vn/Images/2.2022/2022-SP-RANG-XAY-KL-227-RX.png"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">CÀ PHÊ K LIFE 227 G</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">87000 <sup>đ</sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://kphucsinh.vn/Images/2.2022/2022-SP-GIFTSET-HHP-1.png"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">CÀ PHÊ K COFFEE HỘP HẠNH PHÚC 710G</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">323000 <sup>đ</sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://kphucsinh.vn/Images/2.2022/2022-SP-COMBO-XHTD-1.png"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">COMBO CÀ PHÊ XUÂN HẠ THU ĐÔNG 454G</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">433000 <sup>đ</sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://kphucsinh.vn/Images/2.2022/2022-SP-RANG-XAY-KCV-454-RX.png"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">CÀ PHÊ K COFFEE VIETNAM 454 G</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">157000 <sup>đ</sup></span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="footer-item"></div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
